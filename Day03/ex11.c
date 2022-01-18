@@ -5,6 +5,9 @@ int main(void) {
     int num, absolute;
 
     printf("정수 입력 : ");
+    // 입력문
+    // scanf("형식문자", &변수);
+    // d를 num에 넣는듯...^^
     scanf("%d", &num);
 
     // 조건 연산자 (삼항 연산자)
