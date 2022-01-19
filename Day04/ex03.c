@@ -2,14 +2,20 @@
 
 int main(void) {
 
-    char ch;
-    printf("정수를 입력하세요 : ");
-    scanf("%c", &ch);
+    int N;
+    printf("정수를 입력해주세요 : ");
+    scanf("%d", &N); // N에 저장해두는 것
 
-    if ( ch == 'A' )
-        printf("입력한 문자는 %c 입니다.", ch);
-    else
-        printf("입력한 문자는 A가 아닙니다.");
+    // 홀수일 때
+    if ( N % 2 == 1 ) {
+        printf("입력한 정수는 홀수입니다.\n");
+    // 짝수일 때
+    } else {
+        printf("입력한 정수는 짝수입니다.\n");
+    }
     
+    // N % 2 == 1 : 홀수
+    // N % 2 == 0 : 짝수
+
     return 0;
 }
