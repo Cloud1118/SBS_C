@@ -15,6 +15,7 @@ int main(void) {
         if( num == 2 ) {
             printf("장바구니에 담겼습니다.\n");
         }
+        // 종료조건
         if( num == 0 ) {
             printf("종료합니다.\n");
             break;                  // 현재 속해있는 조건문, 반복문을 벗어나는 명령
