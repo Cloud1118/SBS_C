@@ -28,11 +28,20 @@ int main(void) {
     char str1[] = "Hello C~!";  // 배열 기반 문자열 선언
     char *str2 = "Hello C~!";   // 포인터 기반 문자열 선언
 
-    // 문자열 출력 형식문자
+    // 문자열 출력 형식문자 : %s
     printf("배열 기반 문자열 str1[] \n");
     printf("%s\n", str1);
 
-    printf("포인터 기반 문자열 str2[] \n");
+    printf("포인터 기반 문자열 *str2[] \n");
+    printf("%s\n", str2);
+
+    str1[6] = 'A';              // 요소 변경 가능 (C를 A로 변경한 것)
+    //str1 = "Bye Bye~!"        // 새로운 문자열 할당은 불가
+
+    // str2[6] = 'A';           // 요소 변경 불가
+    str2 = "Bye Bye~!";          // 새로운 문자열 할당 가능
+
+    printf("%s\n", str1);
     printf("%s\n", str2);
 
     return 0;
