@@ -1,49 +1,43 @@
 #include <stdio.h>
 
 /*
-    ë¬¸ìžì—´ê³¼ í¬ì¸í„°
-    - ë¬¸ìžì—´ì˜ í‘œí˜„
-      *ë¬¸ìžì—´ì˜ ("") í° ë”°ì˜´í‘œë¡œ ë‚˜íƒ€ë‚¸ë‹¤.
-      *ë¬¸ìžë¡œ ì´ë£¨ì–´ì§„ ë°°ì—´ì— ë¬¸ìžì—´ì„ ì§€ì •í•œë‹¤.
-      *ë¬¸ìžì—´ì˜ ë : ë„(null) ë¬¸ìžë¡œ í‘œì‹œ (\0)
-
+    ¹®ÀÚ¿­°ú Æ÷ÀÎÅÍ
+    - ¹®ÀÚ¿­ÀÇ Ç¥Çö
+      *¹®ÀÚ¿­ÀÇ ("") Å« µû¿ÈÇ¥·Î ³ªÅ¸³½´Ù.
+      *¹®ÀÚ·Î ÀÌ·ç¾îÁø ¹è¿­¿¡ ¹®ÀÚ¿­À» ÁöÁ¤ÇÑ´Ù.
+      *¹®ÀÚ¿­ÀÇ ³¡ : ³Î(null) ¹®ÀÚ·Î Ç¥½Ã (\0)
     ex) char greet[] = "Hello!";
         [H][e][l][l][o][!][\0]
-
-    - ë¬¸ìžì—´ì˜ ì„ ì–¸
-    1. ë°°ì—´ ê¸°ë°˜ ë¬¸ìžì—´ ì„ ì–¸
+    - ¹®ÀÚ¿­ÀÇ ¼±¾ð
+    1. ¹è¿­ ±â¹Ý ¹®ÀÚ¿­ ¼±¾ð
        char greet[] = "Hello!";
-       - ìš”ì†Œì˜ ê°’ ë³€ê²½ ê°€ëŠ¥
-       - ìƒˆë¡œìš´ ë¬¸ìžì—´ í• ë‹¹ ë¶ˆê°€
-
-    2. í¬ì¸í„° ë³€ìˆ˜ ê¸°ë°˜ ë¬¸ìžì—´ ì„ ì–¸]
+       - ¿ä¼ÒÀÇ °ª º¯°æ °¡´É
+       - »õ·Î¿î ¹®ÀÚ¿­ ÇÒ´ç ºÒ°¡
+    2. Æ÷ÀÎÅÍ º¯¼ö ±â¹Ý ¹®ÀÚ¿­ ¼±¾ð]
        char *greet = "Hello!";
-       - ìš”ì†Œì˜ ê°’ ë³€ê²½ ë¶ˆê°€
-       - ìƒˆë¡œìš´ ë¬¸ìžì—´ í• ë‹¹ ê°€ëŠ¥
-
+       - ¿ä¼ÒÀÇ °ª º¯°æ ºÒ°¡
+       - »õ·Î¿î ¹®ÀÚ¿­ ÇÒ´ç °¡´É
 */
 
 int main(void) {
     
-    char str1[] = "Hello C~!";  // ë°°ì—´ ê¸°ë°˜ ë¬¸ìžì—´ ì„ ì–¸
-    char *str2 = "Hello C~!";   // í¬ì¸í„° ê¸°ë°˜ ë¬¸ìžì—´ ì„ ì–¸
+    char str1[] = "Hello C~!";  // ¹è¿­ ±â¹Ý ¹®ÀÚ¿­ ¼±¾ð
+    char *str2 = "Hello C~!";   // Æ÷ÀÎÅÍ ±â¹Ý ¹®ÀÚ¿­ ¼±¾ð
 
-    // ë¬¸ìžì—´ ì¶œë ¥ í˜•ì‹ë¬¸ìž : %s
-    printf("ë°°ì—´ ê¸°ë°˜ ë¬¸ìžì—´ str1[] \n");
+    // ¹®ÀÚ¿­ Ãâ·Â Çü½Ä¹®ÀÚ : %s
+    printf("¹è¿­ ±â¹Ý ¹®ÀÚ¿­ str1[] \n");
     printf("%s\n", str1);
 
-    printf("í¬ì¸í„° ê¸°ë°˜ ë¬¸ìžì—´ *str2[] \n");
+    printf("Æ÷ÀÎÅÍ ±â¹Ý ¹®ÀÚ¿­ *str2[] \n");
     printf("%s\n", str2);
 
-    str1[6] = 'A';              // ìš”ì†Œ ë³€ê²½ ê°€ëŠ¥ (Cë¥¼ Aë¡œ ë³€ê²½í•œ ê²ƒ)
-    //str1 = "Bye Bye~!"        // ìƒˆë¡œìš´ ë¬¸ìžì—´ í• ë‹¹ì€ ë¶ˆê°€
+    str1[6] = 'A';              // ¿ä¼Ò º¯°æ °¡´É (C¸¦ A·Î º¯°æÇÑ °Í)
+    //str1 = "Bye Bye~!"        // »õ·Î¿î ¹®ÀÚ¿­ ÇÒ´çÀº ºÒ°¡
 
-    // str2[6] = 'A';           // ìš”ì†Œ ë³€ê²½ ë¶ˆê°€
-    str2 = "Bye Bye~!";          // ìƒˆë¡œìš´ ë¬¸ìžì—´ í• ë‹¹ ê°€ëŠ¥
+    // str2[6] = 'A';           // ¿ä¼Ò º¯°æ ºÒ°¡
+    str2 = "Bye Bye~!";          // »õ·Î¿î ¹®ÀÚ¿­ ÇÒ´ç °¡´É
 
     printf("%s\n", str1);
     printf("%s\n", str2);
 
     return 0;
-
-}

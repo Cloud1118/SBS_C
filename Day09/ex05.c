@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 /*
-    ë¬¸ìì—´ ì²˜ë¦¬ í•¨ìˆ˜
-    : ë¬¸ìì—´ì˜ ê¸¸ì´, ë¬¸ìì—´ ë³µì‚¬/ê²°í•©/ë¹„êµ ë“±ì˜ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ëŠ” í•¨ìˆ˜
+    ¹®ÀÚ¿­ Ã³¸® ÇÔ¼ö
+    : ¹®ÀÚ¿­ÀÇ ±æÀÌ, ¹®ÀÚ¿­ º¹»ç/°áÇÕ/ºñ±³ µîÀÇ ±â´ÉÀ» »ç¿ëÇÏ´Â ÇÔ¼ö
 
-    - string.h ì´ë¼ëŠ” í—¤ë”íŒŒì¼ì— ì •ì˜ë˜ì–´ìˆë‹¤.
+    - string.h ÀÌ¶ó´Â Çì´õÆÄÀÏ¿¡ Á¤ÀÇµÇ¾îÀÖ´Ù.
 
-    *ì¢…ë¥˜
-    strlen(ë¬¸ìì—´)              : ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼ ë°˜í™˜
-    strcpy(str1,str2)           : str2 ë¥¼ str1 ì— ë³µì‚¬
-    strncpy(str1,str2,count)    : str2 ë¥¼ str1ì— count ê°œìˆ˜ë§Œí¼ ë³µì‚¬
+    *Á¾·ù
+    strlen(¹®ÀÚ¿­)              : ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ ¹İÈ¯
+    strcpy(str1,str2)           : str2 ¸¦ str1 ¿¡ º¹»ç
+    strncpy(str1,str2,count)    : str2 ¸¦ str1¿¡ count °³¼ö¸¸Å­ º¹»ç
 
-    strcat(str1,str2)           : str2 ë¥¼ str1 ë’¤ì— ê²°í•©
-    strncat(str1,str2,count)    : str2 ë¥¼ str1 ë’¤ì— count ê°œìˆ˜ë§Œí¼ ì—°ê²°
+    strcat(str1,str2)           : str2 ¸¦ str1 µÚ¿¡ °áÇÕ
+    strncat(str1,str2,count)    : str2 ¸¦ str1 µÚ¿¡ count °³¼ö¸¸Å­ ¿¬°á
 
-    strcmp(str1,str2)           : ë‘ ë¬¸ìì—´ì„ ë¹„êµí•˜ì—¬, ê°™ìœ¼ë©´ 0, ì•„ë‹ˆë©´ 0ì´ ì•„ë‹Œ ê°’ ë°˜í™˜
-    strncmp(str1,str2,count)    : ë‘ ë¬¸ìì—´ì„ ë¹„êµí•˜ì—¬, ì•ì—ì„œë¶€í„° count ê°œìˆ˜ë§Œí¼ ë¹„êµ
-                                  ê°™ìœ¼ë©´ 0, ì•„ë‹ˆë©´ 0ì´ ì•„ë‹Œ ê°’ ë°˜í™˜
+    strcmp(str1,str2)           : µÎ ¹®ÀÚ¿­À» ºñ±³ÇÏ¿©, °°À¸¸é 0, ¾Æ´Ï¸é 0ÀÌ ¾Æ´Ñ °ª ¹İÈ¯
+    strncmp(str1,str2,count)    : µÎ ¹®ÀÚ¿­À» ºñ±³ÇÏ¿©, ¾Õ¿¡¼­ºÎÅÍ count °³¼ö¸¸Å­ ºñ±³
+                                  °°À¸¸é 0, ¾Æ´Ï¸é 0ÀÌ ¾Æ´Ñ °ª ¹İÈ¯
 */
 int main(void) {
     
@@ -24,14 +24,14 @@ int main(void) {
     char str2[50] = "berry is good";
     char str3[50];
 
-    // ê° ë¬¸ìì—´ì˜ ê¸¸ì´
-    printf("str1 ì˜ ê¸¸ì´ %d \n", strlen(str1));
-    printf("str2 ì˜ ê¸¸ì´ %d \n", strlen(str2));
+    // °¢ ¹®ÀÚ¿­ÀÇ ±æÀÌ
+    printf("str1 ÀÇ ±æÀÌ %d \n", strlen(str1));
+    printf("str2 ÀÇ ±æÀÌ %d \n", strlen(str2));
 
-    // str1ì„ str3ì— ë³µì‚¬í•˜ê¸°
+    // str1À» str3¿¡ º¹»çÇÏ±â
     strcpy(str3, str1);
 
-    // str1ì˜ ë‚´ìš© ì¤‘ 5ê¸€ìë§Œ str2 ë³µì‚¬
+    // str1ÀÇ ³»¿ë Áß 5±ÛÀÚ¸¸ str2 º¹»ç
     strncpy(str2, str1, 5);
 
     printf("str1 : %s\n", str1);

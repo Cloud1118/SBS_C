@@ -2,13 +2,13 @@
 
 /*
     EOF(End of File)
-    : í…ìŠ¤íŠ¸ íŒŒì¼ì˜ ëì„ í‘œí˜„í•˜ê¸° ìœ„í•´ ì‚¬ìš©
+    : ÅØ½ºÆ® ÆÄÀÏÀÇ ³¡À» Ç¥ÇöÇÏ±â À§ÇØ »ç¿ë
 
-    getchar() ìž…ë ¥í•¨ìˆ˜ê°€ EOF ë°˜í™˜í•˜ëŠ” ê²½ìš°
-    1. í•¨ìˆ˜ í˜¸ì¶œ ì‹¤íŒ¨ : ì½ì–´ë“¤ì¼ ë°ì´í„°ê°€ ì—†ì„ ë•Œ
-    2. CTRL+Z ë¥¼ ìž…ë ¥í•˜ëŠ” ê²½ìš°
+    getchar() ÀÔ·ÂÇÔ¼ö°¡ EOF ¹ÝÈ¯ÇÏ´Â °æ¿ì
+    1. ÇÔ¼ö È£Ãâ ½ÇÆÐ : ÀÐ¾îµéÀÏ µ¥ÀÌÅÍ°¡ ¾øÀ» ¶§
+    2. CTRL+Z ¸¦ ÀÔ·ÂÇÏ´Â °æ¿ì
 
-    EOF : ìž…ë ¥í•¨ìˆ˜ì— ëŒ€í•´ì„œ ë¬¸ìž ìž…ë ¥ì„ ì¢…ë£Œí•˜ëŠ” ì˜ë¯¸
+    EOF : ÀÔ·ÂÇÔ¼ö¿¡ ´ëÇØ¼­ ¹®ÀÚ ÀÔ·ÂÀ» Á¾·áÇÏ´Â ÀÇ¹Ì
 */
 
 int main(void) {
@@ -19,7 +19,7 @@ int main(void) {
         ch = getchar();
 
         if( ch == EOF)
-            break;      // ë°˜ë³µë¬¸ íƒˆì¶œ
+            break;      // ¹Ýº¹¹® Å»Ãâ
 
         putchar(ch);
     }

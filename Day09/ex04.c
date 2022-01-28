@@ -1,16 +1,16 @@
 #include <stdio.h>
 /*
-    ë¬¸ìžì—´ ë‹¨ìœ„ ìž…ì¶œë ¥ í•¨ìˆ˜
-    1. puts(ë¬¸ìžì—´) : ë¬¸ìžì—´ ë‹¨ìœ„ë¡œ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
-    2. gets(í¬ì¸í„°) : ë¬¸ìžì—´ ë‹¨ìœ„ë¡œ ìž…ë ¥ë°›ëŠ” í•¨ìˆ˜
+    ¹®ÀÚ¿­ ´ÜÀ§ ÀÔÃâ·Â ÇÔ¼ö
+    1. puts(¹®ÀÚ¿­) : ¹®ÀÚ¿­ ´ÜÀ§·Î Ãâ·ÂÇÏ´Â ÇÔ¼ö
+    2. gets(Æ÷ÀÎÅÍ) : ¹®ÀÚ¿­ ´ÜÀ§·Î ÀÔ·Â¹Þ´Â ÇÔ¼ö
 */
 int main(void) {
     
-    char ch[30]; // 30ë°”ì´íŠ¸
+    char ch[30]; // 30¹ÙÀÌÆ®
     gets(ch);
     puts(ch);
-    // ë¬¸ìžì—´ ì¶œë ¥ í›„, ìžë™ìœ¼ë¡œ ì¤„ë°”ê¿ˆ
-    printf("ë‹¤ìŒ ì¤„\n");
+    // ¹®ÀÚ¿­ Ãâ·Â ÈÄ, ÀÚµ¿À¸·Î ÁÙ¹Ù²Þ
+    printf("´ÙÀ½ ÁÙ\n");
     
     return 0;
 }

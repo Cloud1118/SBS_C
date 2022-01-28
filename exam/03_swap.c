@@ -12,7 +12,7 @@ main 함수에서 변수 2개를 선언하고,
 */
 int main(void) {
 
-    //
+    // 넘어렵당
     
     return 0;
 }
