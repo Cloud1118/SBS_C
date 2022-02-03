@@ -1,18 +1,22 @@
 #include <stdio.h>
-/*
-main 함수에서 변수 2개를 선언하고,
-    swap이라는 이름의 함수를 정의해서
-    swap 함수를 호출하면서, 2개의 인자를 전달하고
-    전달받은 두 변수를 값을 교환하는 코드를 swap 함수에 작성하시오.
 
-    main 함수에서 2개의 변수를 출력하고,
-    swap 함수를 호출하고,
-    이후에 main 함수에서 2개의 변수를 출력하여,
-    두 변수의 값이 변경된 결과를 확인하시오.
-*/
+void swap(int *a, int *b) { //2개의 값 전달, 포인터 변수로...
+    int temp = *a; // 임시로 a의 값 보관
+    *a = *b;
+    *b = temp;
+}
+
 int main(void) {
 
-    // 넘어렵당
-    
+    int a = 10, b = 20;
+    printf("1\n");
+    printf("a = %d, b = %d\n", a, b);
+
+    // 함수 호출
+    swap(&a, &b); // 값을 넘기는 게 아니라 주소를 넘기는 것
+
+    printf("2\n");
+    printf("a = %d, b = %d\n", a, b);
+
     return 0;
 }
