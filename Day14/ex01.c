@@ -19,7 +19,7 @@
 
 // 구조체 정의
 struct person {
-    // 이름, 나이 자료형을 정의할 것
+    // 이름, 나이 자료형을 정의할 것 (person 안에 이름이랑 나이가 있음)
     char name[30];
     int age;
 };
@@ -33,4 +33,13 @@ int main(void) {
     strcpy(boy.name, "김예준");
     strcpy(girl.name, "김예솔");
 
+    // boy, girl의 age(나이)
+    boy.age = 18;
+    girl.age = 21;
+
+    // 출력
+    printf("boy의 이름은 %s, 나이는 %d \n", boy.name, boy.age);
+    printf("girl의 이름은 %s, 나이는 %d \n", girl.name, girl.age);
+
+    return 0;
 }
