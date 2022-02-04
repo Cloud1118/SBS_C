@@ -20,15 +20,15 @@ int main(void) {
     // 구조체 배열 선언
     struct person boy[3] = {
         {"Kim", 12},
-        {"Lee", 14},
-        {"Park", 16}
+        {"Park", 14},
+        {"Moon", 16}
     };
 
     // 구조체 배열 선언
     struct person girl[3];
-    strcpy( girl[0].name, "Jo");
-    strcpy( girl[1].name, "Jung");
-    strcpy( girl[2].name, "Moon");
+    strcpy( girl[0].name, "Lee");
+    strcpy( girl[1].name, "Jo");
+    strcpy( girl[2].name, "Jung");
 
     girl[0].age = 10;
     girl[1].age = 20;
