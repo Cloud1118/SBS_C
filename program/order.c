@@ -23,5 +23,10 @@
 
 int main(void) {
 
+    while (/* condition */) {
+        printf("");
+        scanf("");
+    }
+
     return 0;
 }
